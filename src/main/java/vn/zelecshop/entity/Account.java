@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
 //Setting entity
 @Entity
 @Table(name = "account")
-@NamedQuery(name = "Account.findAll", query = "select a from Account a")
+@NamedQuery(name = "Account.findAll", query = "select a from Account a where a.roleId = 2")
 public class Account implements Serializable{
 
 	private static final long serialVersionUID = 1L;

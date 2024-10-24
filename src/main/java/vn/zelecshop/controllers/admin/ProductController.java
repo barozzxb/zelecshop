@@ -7,17 +7,20 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import vn.zelecshop.services.IProductService;
+import vn.zelecshop.services.impl.ProductServiceImpl;
 
-@WebServlet(urlPatterns = {"/admin/categories", "/admin/category/add"})
-public class CategoryController extends HttpServlet{
+@WebServlet(urlPatterns = {"/admin/products", "/admin/product/edit", "/admin/product/add", "/admin/product/delete"})
+public class ProductController extends HttpServlet{
 
+	IProductService pServ = new ProductServiceImpl();
+	
 	private static final long serialVersionUID = 1L;
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String url = req.getRequestURI();
-		if(url.contains("/category/add")) {
-			req.getRequestDispatcher("/views/admin/category-add.jsp").forward(req, resp);
+		String url = req.getContextPath();
+		if (url.contains("admin/products")) {
+			
 		}
-		req.getRequestDispatcher("/views/admin/categories.jsp").forward(req, resp);
 	}
 }

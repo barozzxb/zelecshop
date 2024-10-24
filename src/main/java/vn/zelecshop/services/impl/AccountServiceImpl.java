@@ -1,5 +1,7 @@
 package vn.zelecshop.services.impl;
 
+import java.util.List;
+
 import vn.zelecshop.dao.IAccountDAO;
 import vn.zelecshop.dao.impl.AccountDAOImpl;
 import vn.zelecshop.entity.Account;
@@ -35,6 +37,16 @@ public class AccountServiceImpl implements IAccountService{
 	@Override
 	public boolean update(Account acc) {
 		return accDAO.update(acc);
+	}
+
+	@Override
+	public List<Account> selectAll() {
+		return accDAO.selectAll();
+	}
+
+	@Override
+	public Account findByUserId(String userid) {
+		return accDAO.findByUserId(userid);
 	}
 
 }

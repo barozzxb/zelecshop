@@ -7,6 +7,7 @@
 	
 	<persistence-unit name="dataSource">
 		<class>vn.zelecshop.entity.Account</class>
+		<class>vn.zelecshop.entity.Genre</class>
 		<properties>
 			<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
 			<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/zelecshop" />

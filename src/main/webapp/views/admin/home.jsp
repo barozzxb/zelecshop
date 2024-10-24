@@ -3,3 +3,16 @@
 <%@ include file="/common/taglib.jsp"%>
 <c:url value="/" var="URL" />
 
+<div class="body-content">
+	<div class="container">
+		<div class="sign-in-page">
+			<div class="row">
+			
+			
+			admin
+			
+			
+			</div>
+		</div>
+	</div>
+</div>
