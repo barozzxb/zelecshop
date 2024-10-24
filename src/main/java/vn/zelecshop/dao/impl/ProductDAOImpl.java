@@ -14,7 +14,7 @@ public class ProductDAOImpl implements IProductDAO{
 	@Override
 	public List<Product> findAll() {
 		EntityManager enma = JPAConfig.getEntityManager();
-		TypedQuery<Product> pros = enma.createNamedQuery("Product.findAll", Product.class);
+		TypedQuery<Product> pros = enma.createNamedQuery("product.findAll", Product.class);
 		return pros.getResultList();
 	}
 

@@ -59,7 +59,7 @@
 			</div>
 		</div>
 	</div>
-	<%@ include file="/common/guest/header.jsp"%>
+	<%@ include file="/common/guest/footer.jsp"%>
 	<!-- JavaScripts placed at the end of the document so the pages load faster -->
 	<script src="${URL}assets/js/jquery-1.11.1.min.js"></script>
 	<script src="${URL}assets/js/bootstrap.min.js"></script>

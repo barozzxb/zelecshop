@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="col-md-4 ">
 					<form action="${pageContext.request.contextPath }/admin/product/add"
-						class="register-form" role="form" method=post>
+						class="register-form" role="form" method="post">
 						<div class="form-group">
 							<label class="info-title" for="pid">Product ID <span>*</span></label>
 							<input type="text" class="form-control unicase-form-control text-input" id="pid"
@@ -19,8 +19,10 @@
 							<label class="info-title" for="pprice">Product Price <span>*</span></label> 
 							<input type="text" class="form-control unicase-form-control text-input" id="pprice"
 								placeholder="" name="pprice"> 
-								
-							<label class="info-title" for="pinfo">Quantity <span>*</span></label>
+							<label class="info-title" for="pquantity">Quantity <span>*</span></label> 
+							<input type="text" class="form-control unicase-form-control text-input" id="pquantity"
+								placeholder="" name="pquantity"> 
+							<label class="info-title" for="pinfo">Info <span>*</span></label>
 							<textarea class="form-control unicase-form-control text-input"
 								id="pinfo" placeholder="" name="pinfo" rows=20></textarea>
 								
@@ -31,7 +33,7 @@
 							
 							<label class="info-title" for="gid">Genre <span>*</span></label> 
 							<select class="btn-group dropright" name="pgenre" id="pgenre">
-								<c:forEach items="listgenre" var="g">
+								<c:forEach items="${listgenre}" var="g">
 									<option value="${g.gid}">${g.gname}</option>
 								</c:forEach>
 							</select>

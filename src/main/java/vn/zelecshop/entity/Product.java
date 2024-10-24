@@ -40,7 +40,7 @@ public class Product implements Serializable {
 	@Column(name = "pprice")
 	private int pprice;
 	
-	@Column(name = "pinfo", columnDefinition = "nvarchar(MAX)")
+	@Column(name = "pinfo", columnDefinition = "nvarchar(5000)")
 	private String pinfo;
 	
 	@Column(name = "ppicture", columnDefinition = "nvarchar(5000)")
@@ -52,5 +52,6 @@ public class Product implements Serializable {
 	@Column(name = "prating")
 	private int prating;
 
-	
+	@Column(name = "gid")
+	private String gid;
 }
