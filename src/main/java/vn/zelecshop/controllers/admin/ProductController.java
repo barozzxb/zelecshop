@@ -35,7 +35,10 @@ public class ProductController extends HttpServlet{
 			req.setAttribute("prod", p);
 			req.getRequestDispatcher("/views/admin/product-edit.jsp");
 		} else {
-			
+			String pid = req.getParameter("pid");
+//			if (pServ.delete(pid)) {
+//				resp.sendRedirect(req.getContextPath() + "/admin/genre/genres");
+//			}
 		}
 	}
 }
