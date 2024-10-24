@@ -5,6 +5,22 @@ import java.util.List;
 import vn.zelecshop.entity.Product;
 
 public interface IProductService {
+<<<<<<< HEAD
+
+	List<Product> findAll();
+
+	Product findById(int productId);
+
+	List<Product> findByproductname(String proname);
+
+	void insert(Product product);
+
+	void delete(int productId ) throws Exception;
+	
+	
+	
+	void update(Product product);
+=======
 	
 	List<Product> findAll();
 
@@ -17,4 +33,5 @@ public interface IProductService {
 	boolean delete(String pid) throws Exception;
 	
 	boolean update(Product product);
+>>>>>>> master
 }
