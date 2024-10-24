@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="${URL}assets/css/animate.min.css">
 <link rel="stylesheet" href="${URL}assets/css/rateit.css">
 <link rel="stylesheet" href="${URL}assets/css/bootstrap-select.min.css">
-
+<link rel="stylesheet" href="${URL}assets/css/customstyles.css">
 <!-- Icons/Glyphs -->
 <link rel="stylesheet" href="${URL}assets/css/font-awesome.css">
 

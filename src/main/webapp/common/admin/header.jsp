@@ -15,7 +15,7 @@
 
 						<c:choose>
 							<c:when test="${sessionScope.account != null}">
-								<a href="${pageContext.request.contextPath}/admin/profile">
+								<a href="${pageContext.request.contextPath}/admin/profile" style="color: white;">
 									<c:choose>
 										<c:when test="${sessionScope.account.name == null}">
 										${sessionScope.account.userid}
@@ -25,7 +25,7 @@
 									</c:otherwise>
 									</c:choose>
 								</a>
-								<a href="${pageContext.request.contextPath }/logout">Đăng
+								<a href="${pageContext.request.contextPath }/logout" style="color: white;">Đăng
 									Xuất</a>
 							</c:when>
 						</c:choose>

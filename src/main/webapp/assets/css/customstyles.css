@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* .col-md-4{ */
+/* 	width: 100%; */
+/* } */
+
+/* #login.row{ */
+/* 	transform: translate(25%, 0%); */
+/* } */
+
+/* #login.sign-in-page{ */
+/* 	width: 50%; */
+/* } */
+
+/* #login.container{ */
+/* 	transform: translate(25%, 0%); */
+/* } */
+
+textarea{
+	resize: none
+}

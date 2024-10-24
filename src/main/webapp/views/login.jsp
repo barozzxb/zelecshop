@@ -1,19 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<div class="breadcrumb">
-	<div class="container">
-		<div class="breadcrumb-inner">
-			<ul class="list-inline list-unstyled">
-				<li><a href="${pageContext.request.contextPath}/waiting">Home</a></li>
-				<li class='active'>Login</li>
-			</ul>
-		</div>
-
-	</div>
-
-</div>
-
 <div class="body-content">
 	<div class="container">
 		<div class="sign-in-page">

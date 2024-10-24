@@ -1,5 +1,7 @@
 package vn.zelecshop.services;
 
+import java.util.List;
+
 import vn.zelecshop.entity.Account;
 
 public interface IAccountService {
@@ -10,4 +12,9 @@ public interface IAccountService {
 	public boolean signup(Account acc);
 
 	public boolean update(Account acc);
+	
+	List<Account> selectAll();
+
+	// Use for finding account when login
+	Account findByUserId(String userid);
 }
