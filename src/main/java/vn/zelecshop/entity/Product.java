@@ -46,11 +46,11 @@ public class Product implements Serializable {
 	@Column(name = "ppicture", columnDefinition = "nvarchar(5000)")
 	private String ppicture;
 	
-	@Column(name = "pmanufacture")
-	private String pmanufacture;
+	@Column(name = "pmanufacturer")
+	private String pmanufacturer;
 	
 	@Column(name = "prating")
-	private int praiting;
+	private int prating;
 
 	
 }

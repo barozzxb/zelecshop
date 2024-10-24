@@ -26,11 +26,15 @@
 											src="assets/images/products/p1.jpg" alt="imga"></td>
 										<td class="col-md-7 col-sm-6 col-xs-6">
 											<div class="product-name">
-												<input type="hidden" value="${genre.gid }" /> <a href="#"
-													class="section-title">${genre.gname}</a>
+												<input type="hidden" value="${prod.pid }" /> <a href="#"
+													class="section-title">${prod.pname}</a>
 											</div> <br></br>
-											<div class="quantity">130 products</div>
+											<div class="quantity">${prod.pquantity}products remain</div>
 										</td>
+
+										<td class="col-md-7 col-sm-6 col-xs-6"><div class="price">
+												${prod.pprice} VND <span>$900.00</span>
+											</div></td>
 										<td class="col-md-2 "><a
 											href="${pageContext.request.contextPath }/admin/genre/edit?gid=${genre.gid}"
 											class="btn-upper btn btn-primary">Edit genre</a></td>
