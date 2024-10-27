@@ -89,7 +89,7 @@
 											<div class="product">
 												<div class="product-image">
 													<div class="image">
-														<a href="${pageContext.request.contextPath }/views/user/product-details.jsp"> <img
+														<a href="${pageContext.request.contextPath }/views/user/product-detail.jsp"> <img
 															src="${URL}assets/images/products/p1.jpg" alt=""> <img
 															src="${URL}assets/images/products/p1_hover.jpg" alt=""
 															class="hover-image">
